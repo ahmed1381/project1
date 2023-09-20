@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    width: 800px;
+    width: 1200px;
     /*margin-left: auto;*/
     /*margin-right: auto;*/
     margin: 0 auto;
@@ -23,6 +23,21 @@ body {
     margin-bottom: 60px;
 }
 
+.position-test {
+    position: relative;
+}
+
+.top {
+    position: absolute;
+    background-color: #f3f31c;
+    font-family: sans-serif;
+    width: 58px;
+    height: 35px;
+    text-align: center;
+    top: -12px;
+    right: -27px;
+}
+
 .post-header {
     margin-bottom: 40px;
 }
@@ -32,7 +47,7 @@ body {
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
     padding: 50px 0px;
-    width: 500px;
+    /*width: 500px;*/
 }
 
 /*h1, h2, h3, h4, li, p {*/
@@ -101,12 +116,12 @@ li {
 .related-author {
     font-size: 18px;
     font-weight: bold;
-
 }
 
 .related-postes {
     list-style: none;
 }
+
 
 /*body {*/
 /*    background-color: silver;*/
@@ -120,6 +135,10 @@ li {
 /*article header h2:first-child {*/
 /*    background-color: teal;*/
 /*}*/
+
+a {
+    color: #1098ad;
+}
 
 a:link {
     color: #1098ad;
@@ -160,7 +179,7 @@ ul, ol {
 
 .post-img {
     width: 100%;
-    height: auto;
+    height: 345px;
 }
 
 nav a:link {
@@ -169,96 +188,6 @@ nav a:link {
     display: inline-block;
 }
 
-nav a:link:last-child {
-    margin-right: 0px;
-}
-
-/*test ronaldo
-
-
-
-
-
-
-
-
-
-
-
-
-*/
-
-
-.player {
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    border-left: 5px solid black;
-    border-right: 5px solid black;
-    margin-right: 1350px;
-    margin-left: 5px;
-    background: darkgray;
-}
-
-.player-info {
-    position: absolute;
-    list-style: none;
-    margin-left: 263px;
-    margin-top: -167px;
-    color: orangered;
-}
-
-.player-image {
-    list-style: none;
-    /*margin-right: 300px;*/
-    /*padding-top: 100px;*/
-    width: 200px;
-    height: 200px;
-}
-
-.player-1 {
-    padding-top: 70px;
-}
-
-.font-player {
-    color: black;
-}
-
-
-.blog\.html {
-    background: #f7f7f7;
-}
-
-.blog\.html h2, a {
-    color: orangered;
-}
-
-/*TEST RONALDO
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
 
 button {
     font-size: 22px;
@@ -273,16 +202,47 @@ button {
     /*margin-bottom: 10px;*/
 }
 
-/*.test-po {*/
-/*    color: white;*/
-/*    font-size: 20px;*/
-/*    background: #444444;*/
-/*    padding-bottom: 200px;*/
-/*    position: absolute;*/
-/*    height: 500px;*/
-/*    width: 500px;*/
-/*}*/
+.author-img {
+    float: left;
+    margin-bottom: 20px;
+}
 
-/*.name {*/
-/*    color: white;*/
-/*}*/
+.author {
+    /*padding-left: 60px;*/
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+h1 {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+article {
+    width: 825px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+aside {
+    width: 300px;
+    float: right;
+}
+
+footer {
+    clear: both;
+}

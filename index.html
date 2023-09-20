@@ -19,18 +19,20 @@
 
 <div class="container">
 
-    <header class="frist-header">
+    <header class="frist-header clearfix">
 
         <h1>the code magazine</h1>
 
         <nav>
 
             <a href="blog.html">Blog</a>
-            <a href="#">challenges</a>
-            <a href="#">flexbox</a>
-            <a href="#">css grid</a>
+            <a href="#">Challenges</a>
+            <a href="#">Flexbox</a>
+            <a href="#">Css Grd</a>
 
         </nav>
+
+        <!--        <div class="clear"></div>-->
 
     </header>
     <!--<div>-->
@@ -41,23 +43,33 @@
     <!--        <p>grid</p>-->
     <!--    </div>-->
     <!--</div>-->
-    <article>
+    <article class="position-test">
+
         <header class="post-header">
-            <h2>the Basic language of the web: HTML</h2>
+
+            <h2>The Basic Language Of The Web: HTML</h2>
 
 
             <img src="img/author-at-work.jpg"
                  alt="author"
                  width="50"
-                 height="50"/>
+                 height="50"
+                 class="author-img"
+            />
 
-            <p id="author">posted by <strong>laura jones</strong> on monday, june 21st 2027</p>
+            <p id="author" class="author">posted by <strong>laura jones</strong> on
+                monday, june 21st 2027
+            </p>
 
             <img src="img/code-3.jpg"
                  alt="HTML code on screen"
                  width="500"
                  height="200"
-                 class="post-img"/>
+                 class="post-img"
+            />
+
+            <p class="top"><strong>TOP</strong></p>
+
         </header>
 
         <p>
@@ -72,8 +84,8 @@
             and why you too should learn it.
         </p>
 
-    </article>
-    <article>
+        <!--    </article>-->
+        <!--    <article>-->
 
         <h3>what is HTML?</h3>
         <p>HTML stands for <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage.
@@ -100,8 +112,8 @@
             <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN WEB DOCS.</a>
         </p>
 
-    </article>
-    <article>
+        <!--    </article>-->
+        <!--    <article>-->
         <h3>why hould you learn HTML?</h3>
 
         <ul>
@@ -111,45 +123,48 @@
             <li>To impress friends</li>
             <li>To have fun</li>
         </ul>
+
     </article>
-    <article>
 
-        <aside class="end-page">
+    <!--    </article>-->
 
-            <h4 class="font">related posts</h4>
+    <!--    <article>-->
 
-            <ul class="related-postes">
-                <li>
-                    <img src="img/author-at-work.jpg"
-                         alt="author"
-                         width="75"
-                         height="75"/>
-                    <a href="#">How to learn web developmente</a>
-                    <p class="related-author">By jonas schmedtmann</p>
-                </li>
+    <aside class="end-page">
 
-                <li>
-                    <img src="img/author-at-work.jpg"
-                         alt="author"
-                         width="75"
-                         height="75"/>
-                    <a href="#">the unknown powers of css</a>
-                    <p class="related-author">By jim Dillon</p>
-                </li>
+        <h4 class="font">related posts</h4>
 
-                <li>
-                    <img src="img/author-at-work.jpg"
-                         alt="author"
-                         width="75"
-                         height="75"/>
-                    <a href="#">How to learn web development</a>
-                    <p class="related-author">By matilda</p>
-                </li>
+        <ul class="related-postes">
+            <li>
+                <img src="img/author-at-work.jpg"
+                     alt="author"
+                     width="75"
+                     height="75"/>
+                <a href="#">How to learn web developmente</a>
+                <p class="related-author">By jonas schmedtmann</p>
+            </li>
 
-            </ul>
+            <li>
+                <img src="img/author-at-work.jpg"
+                     alt="author"
+                     width="75"
+                     height="75"/>
+                <a href="#">the unknown powers of css</a>
+                <p class="related-author">By jim Dillon</p>
+            </li>
 
-        </aside>
-    </article>
+            <li>
+                <img src="img/author-at-work.jpg"
+                     alt="author"
+                     width="75"
+                     height="75"/>
+                <a href="#">How to learn web development</a>
+                <p class="related-author">By matilda</p>
+            </li>
+
+        </ul>
+
+    </aside>
 
     <footer>
         <p id="copyright"> copyright &copy; 2027 by the code magazine.
